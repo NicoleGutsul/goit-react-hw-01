@@ -12,7 +12,7 @@ const Data = ({data}) => {
 export const Statistics = ({title, data}) => {
     return (
         <section className='statistics'>
-            {title ? <MainTitle>{title}</MainTitle> : ''}
+            {title && <MainTitle>{title}</MainTitle>}
             <UlInfo>
                 {data.map((data) => {
                     return (
